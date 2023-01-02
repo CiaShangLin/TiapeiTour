@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TaipeiTour</string>
+
+    <string name="api_state_loading">努力加載中</string>
+    <string name="api_state_error">發生錯誤</string>
+    <string name="api_state_end">到底了</string>
+    <string name="translate">翻譯</string>
+</resources>

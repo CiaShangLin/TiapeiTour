@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.shang.taipeitour.view.main.MainFragment"
+        android:label="@string/app_name" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.shang.taipeitour.view.detail.DetailFragment"
+        android:label="" >
+
+        <argument
+            android:name="attraction"
+            app:argType="com.shang.taipeitour.responses.AttractionsResponse"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.shang.taipeitour.view.webview.WebViewFragment"
+        android:label="" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='' />
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>
